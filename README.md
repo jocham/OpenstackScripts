@@ -13,3 +13,5 @@ How to use:
       sudo ./<scriptname>
   ex:
       sudo ./ChangeHostname.sh
+
+Test
