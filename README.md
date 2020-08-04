@@ -12,6 +12,9 @@ How to use:
 2. (Optional) Run all scripts:
       sudo ./Master.sh
 3. Run individual scripts:
+
       sudo ./<scriptname>
+      
   ex:
+  
       sudo ./ChangeHostname.sh
