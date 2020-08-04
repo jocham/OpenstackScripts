@@ -45,10 +45,12 @@ sed -i -e 's/ssh_pwauth:   0/ssh_pwauth:   1/g' /etc/cloud/cloud.cfg
 
 systemctl restart sshd.service
 
-# Set the root and centos password to Orion123
-echo "****Setting the password for Root and Centos to Orion123."
-echo "Orion123" | passwd --stdin centos
-echo "Orion123" | passwd --stdin root
+# Set the root and centos password
+echo "****Setting the password for users root and centos"
+read -p 'Enter the new root password: ' ROOT
+read -p 'Enter the new centos password: ' CENTOS
+echo "$CENTOS" | passwd --stdin centos
+echo "$ROOT" | passwd --stdin root
 echo 
 # Are you sure?
 read -p 'This script will remove the first 156 characters from /root/.ssh/authorized_keys which prevents root login by default. Do you want to continue? [y/n] ' CONFIRM
