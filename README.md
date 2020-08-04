@@ -13,7 +13,7 @@ How to use:
       sudo ./Master.sh
 3. Run individual scripts:
 
-      sudo ./<scriptname>
+      sudo ./scriptname
       
   ex:
   
