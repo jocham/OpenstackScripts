@@ -1,4 +1,3 @@
-$cat GetEmailList.sh
 #!/bin/bash
 #
 # GetEmailList.sh
