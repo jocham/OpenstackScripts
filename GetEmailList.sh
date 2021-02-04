@@ -1,3 +1,4 @@
+$cat GetEmailList.sh
 #!/bin/bash
 #
 # GetEmailList.sh
@@ -15,7 +16,7 @@ then
     cat /tmp/file.txt | cut -d " " -f 2 > /tmp/file2.txt
 
     #remove the fake email accounts
-    grep -v -e "sas@usiss-openldap.unx.sas.com" -e "cas@usiss-openldap.unx.sas.com" -e "pydemo@something.com" /tmp/file2.txt > /tmp/file4.txt
+    grep -v -e "sas@usiss-openldap.unx.sas.com" -e "cas@usiss-openldap.unx.sas.com" -e "pydemo@something.com" -e "Demo.demo@sas.com" -e "donotreply@sas.com" /tmp/file2.txt > /tmp/file4.txt
 
     #change from a list to a space separated text file
     emails=$(</tmp/file4.txt)
