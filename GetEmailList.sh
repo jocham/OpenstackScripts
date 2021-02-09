@@ -4,9 +4,9 @@
 # Purpose: This script is used to obtain an email list of all openldap users.
 #
 # How to use:
-# 1. If users want to be excluded from the list, add them to a new line in $exc
+# 1. If users want to be excluded from the list, add them (CASE SENSITIVE!) to a new line in /root/excludeEmails.txt
 # 2. To generate the email list, submit this command: sudo /root/GetEmailList.sh
-# 3. The outlook-formatted list of emails can be found here: $final
+# 3. The outlook-formatted list of emails can be found here: /root/LDAPEmailList.txt
 #
 # By: Joe Chambers
 
